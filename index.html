@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Food</title>
+</head>
+<body>
+   <div class="navbar">
+       <a href="#" class="logo">idealMeal</a>
+       <ul class="nav">
+           <li><a href="#home">Home</a></li>
+           <li><a href="#foodPage">Ideas for Meals</a></li>
+       </ul>
+   </div>
+   <div class="banner-area" id="home">
+   </div>
+
+   <div class="food-area"id="foodPage">
+       <div class="text-part">
+        <button class="buttonHrs"onclick="displayHour()">Do you know what time is? Click Here!   </button>
+        <p class="hrs"id="hourTime"></p>
+            <div class="right">
+               
+                <h2> Random Meal</h2>
+                <form id="rondomForm">
+                    <br>
+                    <div><br>
+                        <button class="button">Random Meal</button>
+                        <button class="refreshButton" onclick="refreshPage();">Clean</button>
+                    </div>
+                </form>
+                <div class="boxed" id="foodResult"></div>
+            </div>
+            
+            <div class="left">
+                <h2>Search meal by name: </h2>
+                <form id="foodForm"> 
+                    <div>
+                        <input type="search" id="food" placeholder="Example: Cake">
+                    </div><br>
+                    <button class="button">Food</button>
+                    <button class="refreshButton"onclick="refreshPage();">Clean</button>
+                </form>
+                <div class="boxed"id="foodNameResult"></div>
+            
+                
+             </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
